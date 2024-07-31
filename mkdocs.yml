@@ -1,0 +1,65 @@
+site_name: 网络之路
+
+theme:    # 主题
+  name: material    # 名称
+  language: zh    # 语言，可设置多套切换
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+  features:    # 导航
+    - navigation.instant    # 即时加载
+    - navigation.tracking    # 锚点跟踪
+    - navigation.tabs     # 导航选项卡
+    - navigation.tabs.sticky    # 粘性导航选项卡
+    - navigation.sections   # 次级目录在侧边栏中呈现为组，与tabs同存则有2级导航
+
+markdown_extensions:  #推荐配置Markdown基本语法及其扩展
+  - abbr    # 缩写或名词
+  - pymdownx.snippets  #片段，将任意文件或部分内容嵌入到文档中  
+  - admonition    # 警告或标注
+  - pymdownx.details  #细节折叠
+  - pymdownx.superfences  #超级围栏
+  - attr_list   #属性列表（按钮-颜色图标）
+  - def_list   #定义列表
+  - footnotes  #行内脚注
+  - meta   #元数据
+  - md_in_html  #HTML 中的 Markdown
+  - toc:    # 目录
+      toc_depth: 3    # 目录深度，默认6，0则隐藏
+  - pymdownx.arithmatex:  # 数学公式
+      generic: true  
+  - pymdownx.betterem:   #粗体斜体
+      smart_enable: all
+  - pymdownx.highlight    # 代码高亮，对代码块（SuperFences）和行内代码块（InlineHilite）的语法突出显示
+  - pymdownx.inlinehilite   # 行内高亮
+  - pymdownx.smartsymbols   # 智能符号
+  - pymdownx.tabbed:    # 内容选项卡
+      alternate_style: true   # 启用内容选项卡替代样式，必须开启
+  - pymdownx.tasklist:    # 任务列表
+      custom_checkbox: true   # 切换复选框的呈现样式，将原生复选框样式替换为漂亮的图标
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - javascripts/baidu-tongji.js  #百度统计
+  - javascripts/mathjax.js  #数学公式的JS
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:   # 页脚
+    - icon: fontawesome/brands/twitter    # 社交链接
+      link: https://twitter.com/squidfunk
+      name: squidfunk on Twitter    # 一般自动提取
+    - icon: fontawesome/solid/paper-plane   # 电子邮件
+      link: mailto:admin@yiruru.com
+
+nav:
+  - 主页: index.md
+  - BGP:
+    - BGP基础: BGP基础.md
+
