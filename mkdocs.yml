@@ -62,5 +62,4 @@ nav:
   - 主页: index.md
   - 广域网:
     - BGP:
-      - BGP基础: BGP基础.md
-
+      - BGP基础: docs/广域网/BGP/BGP基础.md
