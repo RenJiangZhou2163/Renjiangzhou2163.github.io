@@ -58,8 +58,14 @@ extra:
     - icon: fontawesome/solid/paper-plane   # 电子邮件
       link: mailto:admin@yiruru.com
 
+
 nav:
   - 主页: index.md
   - 广域网:
-    - BGP:
-      - BGP基础: 广域网/BGP/BGP基础.md
+      - BGP:
+          - BGP基础: 广域网/BGP/BGP基础.md
+  - 云上网络:
+      - 华为云:
+          - 虚拟私有云 VPC:
+              - 产品介绍:
+                  - 什么是虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/什么是虚拟私有云.md
