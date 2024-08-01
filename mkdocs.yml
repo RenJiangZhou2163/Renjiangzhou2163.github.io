@@ -71,6 +71,9 @@ nav:
       - 虚拟私有云 VPC:
         - 产品介绍:
           - 什么是虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/什么是虚拟私有云.md
+    - 微软云:
+      - 虚拟机:
+        - Azure上的Red Hat Enterprise Linux映像: 云上网络/微软云/虚拟机/Azure上的Red Hat Enterprise Linux映像.md
   - 管理: 
     - 招聘:
       - 实习生面试: 实习生面试.md
