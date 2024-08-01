@@ -60,6 +60,7 @@ extra:
 
 nav:
   - 主页: index.md
-  - BGP:
-    - BGP基础: BGP基础.md
+  - 广域网:
+    - BGP:
+      - BGP基础: BGP基础.md
 
