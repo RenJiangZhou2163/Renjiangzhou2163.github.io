@@ -1,10 +1,36 @@
 site_name: 网络之路
+site_author: renjiangzhou@163.com
+
+# # 导航栏
+# nav:
+#   - 主页: index.md
+#   - 云上网络:
+#     - 华为云:
+#       - 虚拟私有云 VPC:
+#         - 产品介绍:
+#           - 图解虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/001-图解虚拟私有云.md
+#           - 什么是虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/002-什么是虚拟私有云.md
+#           - 产品优势: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/003-产品优势.md
+#     - 微软云:
+#       - 虚拟机:
+#         - Azure上的Red Hat Enterprise Linux映像: 云上网络/微软云/虚拟机/Azure上的Red Hat Enterprise Linux映像.md
+#   - 管理: 
+#     - 招聘:
+#       - 实习生面试: 实习生面试.md
+#   # - 广域网:
+#   #   - BGP:
+#   #     - BGP基础: 广域网/BGP/BGP基础.md
+#   #   - OSPF:
+#   #     - OSPF基础: 广域网/OSPF/OSPF基础.md
 
 theme:    # 主题
   name: material    # 名称
   language: zh    # 语言，可设置多套切换
-  highlightjs: true
-  hljs_languages:
+  feature:
+    tabs: true
+
+  highlightjs: true    # JavaScript库在代码块中突出显示源代码。 默认值：True。
+  hljs_languages:    # 默认情况下，highlight.js仅支持23种常用语言。在此列出额外需要支持的语言。
     - yaml
     - rust
   features:    # 导航
@@ -15,6 +41,9 @@ theme:    # 主题
     - navigation.sections   # 次级目录在侧边栏中呈现为组，与tabs同存则有2级导航
 
 markdown_extensions:  #推荐配置Markdown基本语法及其扩展
+  - toc:    # 目录
+      toc_depth: 3    # 目录深度，默认6，0则隐藏
+      permalink: true
   - abbr    # 缩写或名词
   - pymdownx.snippets  #片段，将任意文件或部分内容嵌入到文档中  
   - admonition    # 警告或标注
@@ -25,8 +54,6 @@ markdown_extensions:  #推荐配置Markdown基本语法及其扩展
   - footnotes  #行内脚注
   - meta   #元数据
   - md_in_html  #HTML 中的 Markdown
-  - toc:    # 目录
-      toc_depth: 3    # 目录深度，默认6，0则隐藏
   - pymdownx.arithmatex:  # 数学公式
       generic: true  
   - pymdownx.betterem:   #粗体斜体
@@ -59,22 +86,13 @@ extra:
       link: mailto:admin@yiruru.com
 
 
-nav:
-  - 主页: index.md
-  # - 广域网:
-  #   - BGP:
-  #     - BGP基础: 广域网/BGP/BGP基础.md
-  #   - OSPF:
-  #     - OSPF基础: 广域网/OSPF/OSPF基础.md
-  - 云上网络:
-    - 华为云:
-      - 虚拟私有云 VPC:
-        - 产品介绍:
-          - 图解虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/001-图解虚拟私有云.md
-          - 什么是虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/002-什么是虚拟私有云.md
-    - 微软云:
-      - 虚拟机:
-        - Azure上的Red Hat Enterprise Linux映像: 云上网络/微软云/虚拟机/Azure上的Red Hat Enterprise Linux映像.md
-  - 管理: 
-    - 招聘:
-      - 实习生面试: 实习生面试.md
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      post_readtime: true    # 使用此设置来控制插件是否应自动计算帖子的阅读时间，然后将其呈现在帖子摘录以及帖子本身中：
+      post_readtime_words_per_minute: 300    # 使用此设置可更改读者在计算帖子阅读时间时每分钟预计阅读的字数。每分钟265个字的阅读时间被认为是成年人的平均阅读时间。
+      archive: false    # 使用此设置可启用或禁用存档页面。存档页面以相反的顺序显示特定间隔（例如年、月等）的所有帖子。
+      archive_toc: true    # 使用此设置可利用目录在所有存档页面上显示帖子标题。
+      draft: false    # 渲染草稿帖子在部署预览中很有用。使用此设置可指定插件在构建项目时是否应包含标记为草稿的帖子：
+      draft_on_serve: false    # 该插件可以自动将未来日期的帖子标记为草稿。当日期超过今天时，除非明确标记为草稿，否则在构建项目时会自动包含该帖子：
