@@ -61,16 +61,17 @@ extra:
 
 nav:
   - 主页: index.md
-  - 广域网:
-    - BGP:
-      - BGP基础: 广域网/BGP/BGP基础.md
-    - OSPF:
-      - OSPF基础: 广域网/OSPF/OSPF基础.md
+  # - 广域网:
+  #   - BGP:
+  #     - BGP基础: 广域网/BGP/BGP基础.md
+  #   - OSPF:
+  #     - OSPF基础: 广域网/OSPF/OSPF基础.md
   - 云上网络:
     - 华为云:
       - 虚拟私有云 VPC:
         - 产品介绍:
-          - 什么是虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/什么是虚拟私有云.md
+          - 图解虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/001-图解虚拟私有云.md
+          - 什么是虚拟私有云: 云上网络/华为云/虚拟私有云 VPC/01-产品介绍/002-什么是虚拟私有云.md
     - 微软云:
       - 虚拟机:
         - Azure上的Red Hat Enterprise Linux映像: 云上网络/微软云/虚拟机/Azure上的Red Hat Enterprise Linux映像.md
