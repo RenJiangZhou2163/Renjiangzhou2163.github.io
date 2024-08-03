@@ -1,0 +1,44 @@
+/* 增加选择器优先级 */
+.md-content h1, 
+.md-content h2, 
+.md-content h3, 
+.md-content h4, 
+.md-content h5, 
+.md-content h6 {
+    font-weight: bold !important;
+}
+
+/* 设置一级标题 (h1) 的字体大小 */
+.md-content h1 {
+    font-size: 2em; /* 根据需要调整大小 */
+}
+
+/* 设置二级标题 (h2) 的字体大小 */
+.md-content h2 {
+    font-size: 1.75em; /* 根据需要调整大小 */
+}
+
+/* 设置三级标题 (h3) 的字体大小 */
+.md-content h3 {
+    font-size: 1.5em; /* 根据需要调整大小 */
+}
+
+/* 设置四级标题 (h4) 的字体大小 */
+.md-content h4 {
+    font-size: 1.25em; /* 根据需要调整大小 */
+}
+
+/* 设置五级标题 (h5) 的字体大小 */
+.md-content h5 {
+    font-size: 1em; /* 根据需要调整大小 */
+}
+
+/* 设置六级标题 (h6) 的字体大小 */
+.md-content h6 {
+    font-size: 0.75em; /* 根据需要调整大小 */
+}
+
+/* Maximum space for text block */
+.md-grid {
+    max-width: 95%; /* or 100%, if you want to stretch to full-width */
+}
